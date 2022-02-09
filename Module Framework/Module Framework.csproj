@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Module_Framework</RootNamespace>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="coverlet.collector" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API.Testing.Module\API.Testing.Module.csproj" />
+    <ProjectReference Include="..\Basic.Desktop.Automation\Basic.Desktop.Automation.csproj" />
+    <ProjectReference Include="..\Desktop.SauceLabs.Module\Desktop.SauceLabs.Module.csproj" />
+    <ProjectReference Include="..\Extent.Reporter.Module\Extent.Reporter.Module.csproj" />
+    <ProjectReference Include="..\MobileSauce.Module\MobileSauce.Module.csproj" />
+    <ProjectReference Include="..\Selenium.Helper.Module\Selenium.Helper.Module.csproj" />
+  </ItemGroup>
+
+</Project>
